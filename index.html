@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#top" class="logo-link" aria-label="Zaika home">
+                <img src="Logo final no bg.png" alt="Zaika Logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#hot-corner">hot corner</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#hot-corner" class="nav-btn">order now</a>
+                <div class="cart-widget">
+                    <input type="checkbox" id="cart-toggle" class="cart-toggle-input" hidden>
+                    <label for="cart-toggle" class="cart-toggle">
+                        <span class="cart-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1.5"/>
+                                <circle cx="18" cy="21" r="1.5"/>
+                                <path d="M3 4h2.4a1 1 0 0 1 .98.8l1.5 7.4a1 1 0 0 0 .98.8H18a1 1 0 0 0 .98-.8l1.2-6.2H6.3"/>
+                            </svg>
+                        </span>
+                        <span class="cart-label">cart</span>
+                        <span class="cart-count">3</span>
+                    </label>
+                    <div class="cart-panel">
+                        <div class="cart-panel-header">
+                            <h3 class="cart-panel-title">your picks</h3>
+                            <label for="cart-toggle" class="cart-close">×</label>
+                        </div>
+                        <div class="cart-panel-body">
+                            <ul class="cart-items">
+                                <li class="cart-item">
+                                    <div class="cart-item-info">
+                                        <span class="cart-item-name">paneer tikka masala</span>
+                                        <span class="cart-item-meta">₹239 × 1</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <span class="cart-item-subtotal">₹239</span>
+                                        <button class="cart-item-remove" aria-label="Remove paneer tikka masala">×</button>
+                                    </div>
+                                </li>
+                                <li class="cart-item">
+                                    <div class="cart-item-info">
+                                        <span class="cart-item-name">hyderabad biryani</span>
+                                        <span class="cart-item-meta">₹299 × 1</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <span class="cart-item-subtotal">₹299</span>
+                                        <button class="cart-item-remove" aria-label="Remove hyderabad biryani">×</button>
+                                    </div>
+                                </li>
+                                <li class="cart-item">
+                                    <div class="cart-item-info">
+                                        <span class="cart-item-name">masala dosa</span>
+                                        <span class="cart-item-meta">₹109 × 1</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <span class="cart-item-subtotal">₹109</span>
+                                        <button class="cart-item-remove" aria-label="Remove masala dosa">×</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-panel-footer">
+                            <div class="cart-total-row">
+                                <span class="cart-total-label">total</span>
+                                <span class="cart-total">₹647</span>
+                            </div>
+                            <a href="#hot-corner" class="cart-checkout">review order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <video class="hero-video" src="finalbgvid.mp4" autoplay muted loop playsinline poster="Logo final.png" aria-hidden="true"></video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text">crafted for the</span>
+                <span class="reveal-text delay-1">hungry</span>
+            </h1>
+            <p class="hero-tagline reveal-text delay-2" style="font-size: larger;">Har Bite Mein Zaika.</p>
+            <p class="hero-description reveal-text delay-3">
+                Zaika is the premium food delivery partner that connects<br>
+                top-rated kitchens with hungry neighbourhoods on demand
+            </p>
+                        <a href="#menu" class="cta-btn reveal-text delay-4">explore menu</a>
+        </div>
+    </section>
+
+    <section class="statement-section">
+        <div class="statement-container">
+            <h2 class="statement-text">
+                not everyone<br>
+                <span class="highlight">gets it</span>
+            </h2>
+            <p class="statement-description">
+                award-winning kitchens. curated partner menus. lightning-fast riders.<br>
+                this is how delivery partners should feel.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <section class="hot-corner" id="hot-corner">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">partner exclusives</p>
+                <h2 class="section-title">
+                    price <b><i style="font-weight: 900; padding: 0 29px;">"less"</i></b>taste<br>
+                </h2>
+            </div>
+
+            <div class="hot-controls" role="region" aria-label="Filter and sort partner exclusives">
+                <div class="hot-control-group">
+                    <label class="hot-control-label" for="hot-filter">filter</label>
+                    <select id="hot-filter" class="hot-select" aria-controls="hot-grid">
+                        <option value="all">all items</option>
+                        <option value="veg">vegetarian only</option>
+                        <option value="non-veg">non-vegetarian only</option>
+                        <option value="under-200">under ₹200</option>
+                    </select>
+                </div>
+                <div class="hot-control-group">
+                    <label class="hot-control-label" for="hot-sort">sort</label>
+                    <select id="hot-sort" class="hot-select" aria-controls="hot-grid">
+                        <option value="featured">featured</option>
+                        <option value="price-asc">price: low to high</option>
+                        <option value="price-desc">price: high to low</option>
+                        <option value="discount-desc">discount: high to low</option>
+                        <option value="name-asc">name: a to z</option>
+                    </select>
+                </div>
+                <button type="button" class="hot-reset" id="hot-reset">reset</button>
+                <p class="hot-feedback" id="hot-feedback" role="status" aria-live="polite">showing 4 items</p>
+            </div>
+
+            <div class="price-visual" aria-hidden="true">
+                <div class="price-path pulse-dot"></div>
+
+                <div class="flying-note note-primary">
+                    <div class="note-face">
+                        <span class="note-corner"></span>
+                        <span class="note-symbol">$</span>
+                        <span class="note-corner"></span>
+                    </div>
+                </div>
+
+                <div class="flying-note note-trail"></div>
+
+                <div class="piggy-bank">
+                    <div class="piggy-body">
+                        <div class="piggy-ear"></div>
+                        <div class="piggy-slot"></div>
+                        <div class="piggy-eye"></div>
+                        <div class="piggy-snout">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="piggy-leg leg-1"></div>
+                    <div class="piggy-leg leg-2"></div>
+                    <div class="piggy-tail"></div>
+                </div>
+            </div>
+
+            <div class="hot-grid" id="hot-grid">
+                <div class="hot-card" data-name="hyderabad biryani" data-price="299" data-discount="50" data-veg="false" data-category="biryani">
+                    <div class="hot-card-inner">
+                        <div class="hot-badge">50% OFF</div>
+                        <div class="card-icon"><img src="hyderbad biryani .png" alt="Hyderabad Biryani" class="card-image"></div>
+                        <h3 class="card-title">hyderabad<br>biryani</h3>
+                        <p class="card-restaurant">by Al-Saher</p>
+                        <p class="card-description">partner kitchen special with<br>aromatic basmati and tender meat</p>
+                        <div class="card-pricing">
+                            <span class="current-price">₹299</span>
+                            <span class="original-price">₹599</span>
+                        </div>
+                        <button class="card-btn">add to cart</button>
+                    </div>
+                </div>
+
+                <div class="hot-card" data-name="paneer tikka masala" data-price="239" data-discount="40" data-veg="true" data-category="paneer">
+                    <div class="hot-card-inner">
+                        <div class="hot-badge">40% OFF</div>
+                        <div class="card-icon"><img src="paneer tikka.png" alt="Paneer Tikka Masala" class="card-image"></div>
+                        <h3 class="card-title">paneer tikka<br>masala</h3>
+                        <p class="card-restaurant">by Santa-Banta</p>
+                        <p class="card-description">partner favourite creamy cottage cheese<br>in spicy gravy</p>
+                        <div class="card-pricing">
+                            <span class="current-price">₹239</span>
+                            <span class="original-price">₹399</span>
+                        </div>
+                        <button class="card-btn">add to cart</button>
+                    </div>
+                </div>
+
+                <div class="hot-card" data-name="masala burger" data-price="129" data-discount="35" data-veg="true" data-category="snack">
+                    <div class="hot-card-inner">
+                        <div class="hot-badge">35% OFF</div>
+                        <div class="card-icon"><img src="burger.png" alt="Masala Burger" class="card-image"></div>
+                        <h3 class="card-title">masala<br>burger</h3>
+                        <p class="card-restaurant">by Spice Route</p>
+                        <p class="card-description">partner grill classic with<br>spicy indian flavours</p>
+                        <div class="card-pricing">
+                            <span class="current-price">₹129</span>
+                            <span class="original-price">₹199</span>
+                        </div>
+                        <button class="card-btn">add to cart</button>
+                    </div>
+                </div>
+
+                <div class="hot-card" data-name="masala dosa" data-price="109" data-discount="45" data-veg="true" data-category="dosa">
+                    <div class="hot-card-inner">
+                        <div class="hot-badge">45% OFF</div>
+                        <div class="card-icon"><img src="dosa.png" alt="Masala Dosa" class="card-image"></div>
+                        <h3 class="card-title">masala<br>dosa</h3>
+                        <p class="card-restaurant">by Dosa Delight</p>
+                        <p class="card-description">partner tiffin hero with<br>crispy crepe & potato filling</p>
+                        <div class="card-pricing">
+                            <span class="current-price">₹109</span>
+                            <span class="original-price">₹199</span>
+                        </div>
+                        <button class="card-btn">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rotating-highlight" aria-label="highlighted tech stack">
+        <div class="rotating-track">
+            <span class="rotating-label">Premium</span>
+            <span class="rotating-words">
+                <span class="rotating-inner">
+                    <span>Partners</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;Taste</span>
+                    <span>&nbsp;&nbsp;Quality</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;Zaika!</span>
+                </span>
+            </span>
+        </div>
+    </section>
+
+    <section class="rush-section" id="rush">
+        <div class="section-container">
+            <div class="rush-header">
+                <div class="rush-heading">
+                    <p class="section-label">lightning quick</p>
+                    <h2 class="section-title">in a rush?</h2>
+                    <p class="rush-subtext">our rider network gets partner orders to you fast</p>
+                </div>
+                <a href="#" class="rush-link">see all<span>→</span></a>
+            </div>
+
+            <div class="rush-track">
+                <article class="rush-card">
+                    <div class="rush-thumb">
+                        <img src="hyderbad biryani .png" alt="Hyderabad Biryani" loading="lazy">
+                        <span class="rush-time">10 min</span>
+                    </div>
+                    <div class="rush-meta">
+                        <h3 class="rush-title">delhi darbar</h3>
+                        <p class="rush-offer">Top offer • Free dessert</p>
+                        <div class="rush-stats">
+                            <span class="rush-rating">⭐ 4.8</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-count">2.5k+</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-fee">₹0 delivery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rush-card">
+                    <div class="rush-thumb">
+                        <img src="paneer tikka.png" alt="Paneer Tikka" loading="lazy">
+                        <span class="rush-time">11 min</span>
+                    </div>
+                    <div class="rush-meta">
+                        <h3 class="rush-title">spice palace</h3>
+                        <p class="rush-offer">Buy 1 get 1 free</p>
+                        <div class="rush-stats">
+                            <span class="rush-rating">⭐ 4.7</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-count">1.8k+</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-fee">₹39 delivery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rush-card">
+                    <div class="rush-thumb">
+                        <img src="burger.png" alt="Masala Burger" loading="lazy">
+                        <span class="rush-time">9 min</span>
+                    </div>
+                    <div class="rush-meta">
+                        <h3 class="rush-title">zaika express</h3>
+                        <p class="rush-offer">Cashback ₹100</p>
+                        <div class="rush-stats">
+                            <span class="rush-rating">⭐ 4.9</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-count">3.2k+</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-fee">₹0 delivery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rush-card">
+                    <div class="rush-thumb">
+                        <img src="dosa.png" alt="Masala Dosa" loading="lazy">
+                        <span class="rush-time">12 min</span>
+                    </div>
+                    <div class="rush-meta">
+                        <h3 class="rush-title">filter & feast</h3>
+                        <p class="rush-offer">₹60 off • Code ZA60</p>
+                        <div class="rush-stats">
+                            <span class="rush-rating">⭐ 4.6</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-count">2.1k+</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-fee">₹29 delivery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rush-card">
+                    <div class="rush-thumb">
+                        <img src="delhi darbaar.png" alt="Delhi Darbar" loading="lazy">
+                        <span class="rush-time">10 min</span>
+                    </div>
+                    <div class="rush-meta">
+                        <h3 class="rush-title">midnight munch</h3>
+                        <p class="rush-offer">Top rated • 4.9</p>
+                        <div class="rush-stats">
+                            <span class="rush-rating">⭐ 4.9</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-count">1.1k+</span>
+                            <span class="rush-divider">•</span>
+                            <span class="rush-fee">₹0 delivery</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">curated for you</p>
+                <h2 class="section-title">
+                    discover.<br>
+                    <span class="subtitle-text">partner cuisines</span>
+                </h2>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🍛</div>
+                        <h3 class="menu-title">north indian</h3>
+                        <p class="menu-description">rich curries from trusted partner kitchens</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🥞</div>
+                        <h3 class="menu-title">south indian</h3>
+                        <p class="menu-description">authentic flavours shipped from partner kitchens</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🍜</div>
+                        <h3 class="menu-title">indo-chinese</h3>
+                        <p class="menu-description">fusion favourites from our top collaborators</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🍰</div>
+                        <h3 class="menu-title">desserts</h3>
+                        <p class="menu-description">sweet endings curated with partner bakeries</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🧃</div>
+                        <h3 class="menu-title">beverages</h3>
+                        <p class="menu-description">refreshers bottled by our beverage partners</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card-content">
+                        <div class="menu-icon">🍟</div>
+                        <h3 class="menu-title">snacks</h3>
+                        <p class="menu-description">quick bites crafted by street-food partners</p>
+                        <div class="menu-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="section-container">
+            <h2 class="features-heading">
+                built for foodies.<br>
+                powered for partners.
+            </h2>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon-box">⚡</div>
+                    <h3 class="feature-title">lightning fast</h3>
+                    <p class="feature-text">hyperlocal dispatch network that keeps every partner promise on time</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">🎯</div>
+                    <h3 class="feature-title">partner-first ops</h3>
+                    <p class="feature-text">quality checks, temperature bags, and real-time tracking for every handoff</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">💰</div>
+                    <h3 class="feature-title">smart deals</h3>
+                    <p class="feature-text">dynamic promos that boost partner growth while keeping diners delighted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-section">
+        <div class="trust-container">
+            <p class="trust-label">trusted by foodies & partner kitchens across india</p>
+            <h2 class="trust-title">the proof<br>writes itself</h2>
+            <div class="ratings">
+                <div class="rating-box">
+                    <div class="rating-score">4.8</div>
+                    <div class="rating-source">play store</div>
+                </div>
+                <div class="rating-box">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-source">app store</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-hub" aria-labelledby="info-hub-title">
+        <div class="section-container">
+            <div class="info-intro">
+                <p class="section-label">learn more</p>
+                <h2 class="section-title" id="info-hub-title">behind the kitchen doors</h2>
+                <p class="info-summary">Explore the people, playbooks, and guardrails that help Zaika connect partner kitchens to millions of diners. Quick reads, zero fluff—just how we keep the network humming.</p>
+            </div>
+
+            <div class="info-grid" role="list">
+                <article class="info-card" role="listitem">
+                    <header class="info-card-header">
+                        <span class="info-badge">company</span>
+                        <h3>Powering India's cravings with partner-first technology.</h3>
+                    </header>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <h4>about</h4>
+                            <p>Discover how we bridge iconic kitchens and neighbourhood favourites with a logistics backbone built for scale.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>careers</h4>
+                            <p>Join a borderless team building routing intelligence, partner tooling, and customer experiences that define the next era of delivery.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>blog</h4>
+                            <p>Stay updated with partner spotlights, market deep-dives, and the playbooks behind our fastest city launches.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="info-card" role="listitem">
+                    <header class="info-card-header">
+                        <span class="info-badge">support</span>
+                        <h3>Supporting diners, riders, and partner kitchens around the clock.</h3>
+                    </header>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <h4>help center</h4>
+                            <p>Browse guides that cover order tracking, loyalty, payouts, and ops setup for partners new and seasoned.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>contact us</h4>
+                            <p>Need a human? Reach our concierge via chat, call, or email for instant order, rider, or payout resolution.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>FAQ</h4>
+                            <p>Shortcut through the top queries on delivery windows, payment methods, subscription perks, and more.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="info-card" role="listitem">
+                    <header class="info-card-header">
+                        <span class="info-badge">legal</span>
+                        <h3>Building trust with transparent policies for every partner.</h3>
+                    </header>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <h4>privacy policy</h4>
+                            <p>Understand how we secure diner, rider, and partner data—from encrypted payments to analytics safeguards.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>terms of service</h4>
+                            <p>Review the commitments that keep every delivery punctual, fair, and compliant across the network.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Zaika</h3>
+                    <p class="footer-tagline" style="font-size: larger;">Har Bite Mein Zaika.</p>
+                    <div class="footer-person">
+                        <p class="footer-name">Ozayy</p>
+                        <ul class="footer-social" aria-label="Ozayy social links">
+                            <li>
+                                <a class="social-link" href="https://www.linkedin.com/in/ojaswa-chauhan-812261381/" target="_blank" rel="noopener noreferrer">
+                                    <span class="social-icon" aria-hidden="true">
+                                        <svg class="icon icon-linkedin" viewBox="0 0 24 24" role="img">
+                                            <path d="M4.98 3.5A2.48 2.48 0 1 1 0 3.5a2.48 2.48 0 0 1 4.98 0ZM.53 8.32h4.18V23H.53Zm8 0h4v2.13h.06c.56-1 1.93-2.13 3.98-2.13 4.25 0 5.04 2.8 5.04 6.45V23h-4.18v-6.94c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23H8.53Z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="social-label">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="https://github.com/O-zayy" target="_blank" rel="noopener noreferrer">
+                                    <span class="social-icon" aria-hidden="true">
+                                        <svg class="icon icon-github" viewBox="0 0 24 24" role="img">
+                                            <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.12-1.46-1.12-1.46-.92-.64.07-.63.07-.63 1.02.07 1.56 1.05 1.56 1.05.9 1.55 2.36 1.1 2.94.84.09-.66.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-2 .1-2.7 0 0 .83-.27 2.75 1.03a9.56 9.56 0 0 1 5 0c1.92-1.3 2.75-1.03 2.75-1.03.34.83.37 1.8.09 2.7 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="social-label">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="https://www.instagram.com/ojaswa_chauhan770/" target="_blank" rel="noopener noreferrer">
+                                    <span class="social-icon" aria-hidden="true">
+                                        <svg class="icon icon-instagram" viewBox="0 0 24 24" role="img">
+                                            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.75-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="social-label">Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="careers.html">careers</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help-center.html">help center</a></li>
+                            <li><a href="contact-us.html">contact us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="privacy-policy.html">privacy policy</a></li>
+                            <li><a href="terms-of-service.html">terms of service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Zaika. made with ❤️ in india</p>
+                <p>Crafted by Ozayy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
