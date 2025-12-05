@@ -18,7 +18,7 @@
                 <li><a href="#hot-corner">hot corner</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#hot-corner" class="nav-btn">order now</a>
+                <a href="#hot-corner" class="nav-btn" id="nav-order-btn">order now</a>
                 <div class="cart-widget">
                     <input type="checkbox" id="cart-toggle" class="cart-toggle-input" hidden>
                     <label for="cart-toggle" class="cart-toggle">
@@ -76,7 +76,7 @@
                                 <span class="cart-total-label">total</span>
                                 <span class="cart-total">₹647</span>
                             </div>
-                            <a href="#hot-corner" class="cart-checkout">review order</a>
+                            <a href="#hot-corner" class="cart-checkout">Proceed To Pay</a>
                         </div>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
 
             <div class="hot-controls">
                 <div class="hot-control-group">
-                    <label class="hot-control-label">filter</label>
-                    <select class="hot-select">
+                    <label class="hot-control-label" for="filter-select">filter</label>
+                    <select class="hot-select" id="filter-select">
                         <option value="all">all items</option>
                         <option value="veg">vegetarian only</option>
                         <option value="non-veg">non-vegetarian only</option>
@@ -139,8 +139,8 @@
                     </select>
                 </div>
                 <div class="hot-control-group">
-                    <label class="hot-control-label">sort</label>
-                    <select class="hot-select">
+                    <label class="hot-control-label" for="sort-select">sort</label>
+                    <select class="hot-select" id="sort-select">
                         <option value="featured">featured</option>
                         <option value="price-asc">price: low to high</option>
                         <option value="price-desc">price: high to low</option>
@@ -148,8 +148,8 @@
                         <option value="name-asc">name: a to z</option>
                     </select>
                 </div>
-                <button type="button" class="hot-reset">reset</button>
-                <p class="hot-feedback">showing 4 items</p>
+                <button type="button" class="hot-reset" id="reset-btn">reset</button>
+                <p class="hot-feedback" id="hot-feedback">showing 4 items</p>
             </div>
 
             <div class="price-visual">
@@ -181,8 +181,8 @@
                 </div>
             </div>
 
-            <div class="hot-grid">
-                <div class="hot-card">
+            <div class="hot-grid" id="hot-grid">
+                <div class="hot-card" data-name="hyderabad biryani" data-price="299" data-type="non-veg" data-discount="50">
                     <div class="hot-card-inner">
                         <div class="hot-badge">50% OFF</div>
                         <div class="card-icon"><img src="hyderbad biryani .png" alt="Hyderabad Biryani" class="card-image"></div>
@@ -197,7 +197,7 @@
                     </div>
                 </div>
 
-                <div class="hot-card">
+                <div class="hot-card" data-name="paneer tikka masala" data-price="239" data-type="veg" data-discount="40">
                     <div class="hot-card-inner">
                         <div class="hot-badge">40% OFF</div>
                         <div class="card-icon"><img src="paneer tikka.png" alt="Paneer Tikka Masala" class="card-image"></div>
@@ -212,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="hot-card">
+                <div class="hot-card" data-name="masala burger" data-price="129" data-type="veg" data-discount="35">
                     <div class="hot-card-inner">
                         <div class="hot-badge">35% OFF</div>
                         <div class="card-icon"><img src="burger.png" alt="Masala Burger" class="card-image"></div>
@@ -227,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="hot-card">
+                <div class="hot-card" data-name="masala dosa" data-price="109" data-type="veg" data-discount="45">
                     <div class="hot-card-inner">
                         <div class="hot-badge">45% OFF</div>
                         <div class="card-icon"><img src="dosa.png" alt="Masala Dosa" class="card-image"></div>
@@ -623,5 +623,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

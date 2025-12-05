@@ -1710,6 +1710,14 @@ body {
     transform: translateY(-2px);
 }
 
+.card-btn[data-mode="quantity"],
+.card-btn[data-mode="quantity"]:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: none;
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
